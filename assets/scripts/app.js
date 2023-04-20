@@ -1,7 +1,10 @@
-let currentResult = 0;
+const defaultResult = 0;
+let currentResult = defaultResult;
 
 currentResult = currentResult + 10;
 
-let calculationDescription = '(0 + 10)';
+let calculationDescription = `(${currentResult} + 10) * 3 / 2 - 1`;
+let errorMessage = 'An error \n' + 
+                    'occurred!';
 
-outputResult(currentResult, calculationDescription);
+outputResult(currentResult, errorMessage);
